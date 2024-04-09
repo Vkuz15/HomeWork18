@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -30,6 +28,15 @@ public class Main {
                 System.out.print(number + " ");
             }
         }
+        System.out.println(" ");
+    }
+
+    public static void task3() {
+        List<String> animals = new ArrayList<>(List.of("Лев", "Зебра", "Бобер", "Лев", "Панда", "Енот", "Панда", "Панда", "Панда", "Панда", "Скунс"));
+        Set setAnimals = new HashSet<>(animals);
+        animals.clear();
+        animals.add(setAnimals.toString());
+        System.out.println(animals);
     }
 
 }
